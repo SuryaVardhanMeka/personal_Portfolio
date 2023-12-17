@@ -1,0 +1,31 @@
+---
+title: "Introduction to Linear Regression using SAS Software"
+author: "Surya Vadham"
+date: "2023-12-06"
+categories: [news, code, analysis]
+image: "image.jpg"
+---
+
+## INTRODUCTION 
+
+Linear regression is a statistical method widely employed for modeling the relationship between a dependent variable and one or more independent variables. SAS (Statistical Analysis System) software offers a powerful platform for performing linear regression analysis, providing users with robust tools to explore, analyze, and interpret relationships within their datasets.
+
+SAS's linear regression capabilities are accessible through procedures such as PROC REG, which stands for regression analysis. This procedure allows users to fit linear models to their data, enabling the estimation of parameters, assessment of model fit, and examination of variable relationships.
+
+To initiate a linear regression analysis in SAS, users typically start by specifying the PROC REG statement, followed by the variable names corresponding to the dependent and independent variables. For example:
+PROC REG DATA=mydata;
+   MODEL dependent_variable = independent_variable1 independent_variable2;
+RUN;
+The output from PROC REG includes various tables that provide valuable information for interpreting the linear regression model. The "Model Fit" table, for instance, presents crucial statistics such as the R-squared, which measures the proportion of variability in the dependent variable explained by the model. A higher R-squared indicates a better fit.
+
+
+Coefficients for each independent variable are reported in the "Parameter Estimates" table, showing the estimated slope (beta) and intercept (alpha) values. These coefficients help quantify the strength and direction of the relationships between variables.
+
+Diagnostic statistics, like standard errors, t-values, and p-values, aid in assessing the significance of the coefficients. A low p-value indicates that the corresponding variable significantly contributes to the model.
+SAS software also facilitates the visualization of linear regression results through graphical tools. The "Plot" statement within PROC REG generates scatterplots with regression lines, aiding in the visual interpretation of the relationships between variables.
+
+Furthermore, SAS allows users to perform various regression diagnostics, such as checking for multicollinearity, influential observations, and normality of residuals. These diagnostics help ensure the validity of the linear regression model and identify potential issues that may affect its reliability.
+
+## CONCLUSION 
+
+In conclusion, SAS software provides a comprehensive and user-friendly environment for conducting linear regression analysis. Through PROC REG and associated tools, users can efficiently build, evaluate, and interpret linear regression models, making informed decisions based on the relationships within their data.

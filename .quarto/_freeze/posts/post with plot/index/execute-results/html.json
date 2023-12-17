@@ -1,0 +1,16 @@
+{
+  "hash": "4a1e83080399473f94a64ce3042b9606",
+  "result": {
+    "markdown": "---\ntitle: \"Post With plot\"\nauthor: \"Surya Vadham\"\ndate: \"2023-12-06\"\ncategories: [news, code, analysis,plotly,plot]\nimage: \"image.jpg\"\n---\n\n\n***The R code utilizes the mtcars data set to visualize the sales distribution for different miles per gallon values using a bar graph. The number of cars is tabulated for each unique mileage value (mpg), and a bar plot is generated with miles per gallon on the x-axis and the corresponding count of cars on the y-axis. The bars are represented in a sky-blue color with black borders for clarity. Additionally, the code includes a legend in the top-right corner, indicating that the sky-blue bars represent car models. This straightforward visualization provides an easy-to-interpret overview of the distribution of car sales based on their miles per gallon in the mtcars data set.***\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Load the mtcars dataset (if not already loaded)\ndata(mtcars)\n\n# Calculate the total sales (number of cars) for each model\nsales_data <- table(mtcars$mpg)\n\n# Create a bar graph\nbarplot(sales_data, \n        main = \"Sales of Cars (mtcars)\",\n        xlab = \"Miles per Gallon (mpg)\",\n        ylab = \"Number of Cars\",\n        col = \"skyblue\",\n        border = \"black\",\n        names.arg = sort(unique(mtcars$mpg)),\n        cex.names = 0.7\n)\n\n# Add a legend\nlegend(\"topright\", legend = \"Car Models\", fill = \"skyblue\", border = \"black\")\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

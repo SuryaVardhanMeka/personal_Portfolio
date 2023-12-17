@@ -1,0 +1,45 @@
+project:
+  type: website
+
+website:
+  title: "Surya Vadhan"
+  favicon: "images/surya.jpg"
+  site-url: https://www.myblogexample.io
+  page-footer:
+    center: |
+      [Contact Surya Vardhan](mailto:surya .SuryaVardhanMeka@my.unt.edu)
+    left: |
+      Made with [Quarto](https://quarto.org/)
+    right: |
+      [Github Code Repo](https://github.com)
+    background: "#2780e3"
+    
+  
+  navbar:
+    left:
+      - icon: rss
+      - href: index.qmd
+        text: Home
+      - href: projects.qmd
+        text: Projects
+      - href: resume.qmd
+        text: Resume
+        
+    right:
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+format:
+  html:
+    theme:
+      light: solar
+      dark: [cosmo, theme_dark_custom.scss]
+    code-link: true
+    code-fold: show
+    code-tools: true
+    code-block-bg: "lightblue"
+    code-block-border-left: "#31BAE9"
+    highlight-style: github
+editor: visual
+
